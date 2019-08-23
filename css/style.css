@@ -1,0 +1,424 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{list-style-type: none;}
+a{text-decoration: none;}
+html,body{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+/* header */
+
+header{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    background: #333;
+}
+.main-title{
+    width: 100%;
+    height: 180px;
+    color: white;
+    animation-duration: 4s;
+    animation-name: main-title;
+    animation-direction: alternate;
+    /* background: #ccc; */
+}
+@keyframes main-title {
+    from {
+      opacity: 0; 
+    }
+  
+    to {
+        top: 0;
+      opacity: 1;
+    }
+}
+#container .sns{
+    position: absolute;
+    right: 5%; top: 7%;
+    text-shadow: 1px 1px 4px black;
+}
+#container .sns i:hover{
+    transform: scale(1.2);
+    transition: all .3s linear;
+    color: #ec9b24;
+}
+#container .sns i{
+    padding-right: 20px;
+    transform: scale(1);
+    transition: all .3s linear;
+}
+#container .sns a{
+    color: white;
+}
+.main-title h1{
+    position: absolute;
+    left: 5%; top: 5%;
+    width: 450px;
+    padding-bottom: 5px;
+    font-size: 3.4em;
+    font-weight: bold;
+    border-bottom: 8px solid #ec9b24;
+    text-shadow: 1px 1px 4px black;
+}
+.main-title p{
+    position: absolute;
+    left: 5%; top: 13%;
+    width: 300px;
+    margin-top: 15px;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px black;
+}
+
+/* header - main-visual */
+
+.main-visual{
+    width: 100%;
+    height: 760px;
+    /* border: 1px solid red; */
+}
+.visual{
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid red; */
+    /* background: #333; */
+}
+.visual-box{
+    overflow: hidden;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 15px solid #ec9b24;
+    border-radius: 50%;
+    box-shadow: 8px 8px 6px black inset;
+    animation-duration: 2s;
+    animation-name: visual-box;
+    animation-direction: alternate;
+}
+@keyframes visual-box {
+    from {
+        transform: scale(1.5);
+      opacity: 0; 
+    }
+  
+    to {
+        transform: scale(1);
+      opacity: 1;
+    }
+}
+.visual-box img{
+    margin-left: -40px;
+    margin-top: 50px;
+    animation-duration: 2s;
+    animation-name: visual-boximg;
+    animation-direction: alternate;
+}
+@keyframes visual-boximg {
+    from {
+        margin-top: 300px;
+      opacity: 0; 
+    }
+  
+    to {
+        
+      opacity: 1;
+    }
+}
+.visual-left-txt{
+    position: absolute;
+    left: 5%; top: 25%;
+    text-align: left;
+    text-shadow: 1px 1px 4px black;
+    color: white;
+    animation-duration: 2s;
+    animation-name: visual-left-txt;
+    animation-direction: alternate;
+}
+.visual-left-txt h1{
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+@keyframes visual-left-txt {
+    from {
+        left: 0%; top: 25%;
+      opacity: 0; 
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+.visual-left-txt p{
+    line-height: 2;
+    font-size: 1.6em;
+}
+.visual-right-txt{
+    position: absolute;
+    right: 5%; bottom: 15%;
+    color: whitesmoke;
+    text-shadow: 1px 1px 4px black;
+    animation-duration: 2s;
+    animation-name: visual-right-txt;
+    animation-direction: alternate;
+}
+@keyframes visual-right-txt {
+    from {
+        right: 0%; bottom: 15%;
+      opacity: 0; 
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+.visual-right-txt > .line{
+    border-right: 10px solid #ec9b24;
+    height: 100px;
+    margin-right: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.visual-right-txt h1{
+    font-size: 2.5em;
+}
+.visual-right-txt p{
+    text-align: right;
+    font-size: 1.6em;
+    line-height: 2;
+}
+/* main-menu */
+
+#main-menu{
+    width: 100%;
+    /* margin-bottom: 200px; */
+    text-align: center;
+    z-index: 99;
+}
+#main-menu.sticky{
+    position: fixed;
+    left: 0;right: 0;
+    top: 0;
+}
+#main-menu .depth1{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    background: white;
+    overflow: hidden;
+}
+#main-menu .depth1 > li > a{
+    padding: 14px;
+    height: 60px;
+    display: block;
+    border: 2px solid #ec9b24;
+    font-size: 20px;
+    color: #333;
+    border-right: none;
+}
+#main-menu .depth1 > li:last-child > a{border-right: 2px solid #ec9b24;}
+#main-menu .depth1 > li > a:hover{
+    background: #ec9b24;
+    color: whitesmoke;
+}
+#main-menu .depth1 li:hover .depth2{
+    opacity: 1;
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    transition: all .6s linear;
+}
+#main-menu .depth1 .depth2{
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    transition: all .2s linear;
+}
+#main-menu .depth1 .depth2 li{
+    line-height: 2.7;
+    font-weight: bold;
+}
+#main-menu .depth1 .depth2 li a{
+    font-size: 15px;
+    display: block;
+    color: #333;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+#main-menu .depth1 .depth2 li a:hover{
+    background: #ec9b24;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* content1 영역 */
+
+#content1{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#content1 h1{
+    font-size: 3em;
+    margin-bottom: 80px;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 2px 2px 3px black;
+}
+.content1-items{
+    opacity: 0;
+    display: grid;
+    width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: 615px 305px 400px;
+    grid-template-rows: 430px 333px;
+}
+.content1-item1 img:hover,
+.content1-item2 img:hover,
+.content1-item3 img:hover,
+.content1-item4 img:hover,
+.content1-item5 img:hover{
+    transform: scale(1.2);
+    transition: all .3s linear;
+}
+.content1-item2{
+    margin-top: 30px;
+}
+.content1-item3{
+    margin-top: 80px;
+}
+.content1-item5{
+    margin-top: -60px;
+}
+
+/* content2 영역 */
+#content2{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    text-align: center;
+}
+#content2 h1{
+    font-size: 3em;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 2px 2px 3px black;
+}
+
+/* content2 left영역 */
+#content2 .content2-left{
+    position: absolute;
+    left: 0; top: 95px;
+    width: 50%;
+    height: 800px;
+    opacity: 0;
+    /* border: 1px solid red; */
+}
+.content2-left-txt p{
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    top: 5%;
+    font-size: 2em;
+}
+.content2-left-img1{
+    position: absolute;
+    right: 25%; top: 15%;
+}
+.content2-left-img2{
+    position: absolute;
+    left: 5%; top: 15%;
+    border: 1px solid #ccc;
+}
+.content2-left-img3{
+    position: absolute;
+    right: 25%; top: 47%;
+    border: 1px solid #ccc;
+}
+.content2-left-img4{
+    position: absolute;
+    bottom: 9%;
+    right: 9.5%;
+}
+.content2-left img{
+    width: 200px;
+}
+.content2-left-img2 img{
+    width: 400px;
+}
+.content2-left-img4 img{
+    width: 350px;
+}
+.content2-left-img1:hover,
+.content2-left-img2:hover,
+.content2-left-img3:hover,
+.content2-left-img4:hover{
+    transform: scale(1.1);
+    transition: all .3s linear;
+}
+/* content2 right영역 */
+#content2 .content2-right{
+    position: absolute;
+    right: 0; top: 95px;
+    width: 50%;
+    height: 800px;
+    opacity: 0;
+    /* border: 1px solid red; */
+}
+.content2-right-txt p{
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    top: 5%;
+    font-size: 2em;
+}
+.content2-right-case{
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    top: 150px;
+}
+.content2-right-bxslider{
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    top: 220px;
+}
+.content2-right-case img{
+    width: 243px;
+    height: 495px;
+}
+.content2-right-slider img{
+    width: 210px;
+}
+
+/* content3 */
+
+#content3{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    text-align: center;
+}
+#content3 h1{
+    font-size: 3em;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+    box-shadow: 2px 2px 3px black;
+}
+
