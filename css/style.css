@@ -289,7 +289,7 @@ header{
 .content1-item3 img:hover,
 .content1-item4 img:hover,
 .content1-item5 img:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: all .3s linear;
 }
 .content1-item2{
@@ -337,22 +337,22 @@ header{
 }
 .content2-left-img1{
     position: absolute;
-    right: 25%; top: 15%;
+    right: 15%; top: 15%;
 }
 .content2-left-img2{
     position: absolute;
-    left: 5%; top: 15%;
+    left: 15%; top: 15%;
     border: 1px solid #ccc;
 }
 .content2-left-img3{
     position: absolute;
-    right: 25%; top: 47%;
+    right: 15%; top: 47%;
     border: 1px solid #ccc;
 }
 .content2-left-img4{
     position: absolute;
     bottom: 9%;
-    right: 9.5%;
+    right: 0;
 }
 .content2-left img{
     width: 200px;
@@ -408,7 +408,7 @@ header{
 #content3{
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 1800px;
     text-align: center;
 }
 #content3 h1{
@@ -422,3 +422,107 @@ header{
     box-shadow: 2px 2px 3px black;
 }
 
+/* osan 영역 */
+
+.content3-osan-container{
+    position: relative;
+    opacity: 0;
+    width: 100%;
+    height: 900px;
+}
+.content3-osan-img-txt{
+    position: absolute;
+    left: 10%; top: 10%;
+}
+.content3-osan-img-txt h2{
+    background: #333;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.content3-osan-img-txt p{
+    width: 300px;
+}
+.content3-osan-img-link{
+    position: absolute;
+    left: 18%; top: 10%;
+    text-align: left;
+    font-size: 1.3em;
+}
+.content3-osan-img-link a{
+    color: #ec9b24;
+    font-weight:bold;
+    display: block;
+    padding: 10px;
+    width: 160px;
+}
+/* samjin 영역 */
+
+.content3-samjin-container{
+    position: relative;
+    opacity: 0;
+    width: 100%;
+    height: 1200px;
+    top: 50%;
+    border: 1px solid red;
+}
+.content3-samjin-img-txt{
+    position: absolute;
+    right: 10%; top: 40%;
+}
+.content3-samjin-img-txt h2{
+    background: #333;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.content3-samjin-img-txt p{
+    width: 300px;
+}
+.content3-samjin-img-link{
+    position: absolute;
+    right: 14%; top: 25%;
+    text-align: center;
+    font-size: 1.3em;
+}
+.content3-samjin-img-link a{
+    color: #ec9b24;
+    font-weight:bold;
+    display: block;
+    padding: 10px;
+    width: 160px;
+}
+.content3-samjin-img1{
+    position: absolute;
+    left: 5%; top: 10%;
+}
+.content3-samjin-img2{
+    position: absolute;
+    left: 26.5%; top: 10%;
+}
+.content3-samjin-img3{
+    position: absolute;
+    left: 45.4%; top: 10%;
+}
+.content3-samjin-img4{
+    position: absolute;
+    left: 45.4%; top: 48.3%;
+}
+.content3-samjin-img5{
+    position: absolute;
+    left: 26.5%; top: 56.5%;
+}
+.content3-samjin-img1 img,
+.content3-samjin-img2 img,
+.content3-samjin-img3 img,
+.content3-samjin-img4 img,
+.content3-samjin-img5 img{
+    border: 1px solid #ec9b24;
+}
+.content3-samjin-img1 img:hover,
+.content3-samjin-img2 img:hover,
+.content3-samjin-img3 img:hover,
+.content3-samjin-img4 img:hover,
+.content3-samjin-img5 img:hover{
+    transform: scale(1.02);
+}
