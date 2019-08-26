@@ -206,12 +206,16 @@ header{
 #main-menu .depth1{
     width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    /* display: grid; */
+    /* grid-template-columns: 300px 300px 300px 300px; */
     background: white;
-    overflow: hidden;
+}
+#main-menu .depth1 > li{
+    float: left;
+    background: #fff;
 }
 #main-menu .depth1 > li > a{
+    width: 300px;
     padding: 14px;
     height: 60px;
     display: block;
@@ -225,32 +229,30 @@ header{
     background: #ec9b24;
     color: whitesmoke;
 }
-#main-menu .depth1 li:hover .depth2{
+#main-menu li:hover .depth2{
     opacity: 1;
-    /* display: block; */
-    width: 100%;
-    height: 100%;
+    height: auto;
     transition: all .6s linear;
 }
-#main-menu .depth1 .depth2{
-    width: 100%;
+#main-menu .depth2{
     height: 0;
     opacity: 0;
     transition: all .2s linear;
+    overflow: hidden;
 }
-#main-menu .depth1 .depth2 li{
+#main-menu .depth2 li{
     line-height: 2.7;
     font-weight: bold;
 }
-#main-menu .depth1 .depth2 li a{
+#main-menu .depth2 li a{
     font-size: 15px;
     display: block;
     color: #333;
     background: white;
-    border: 1px solid #ccc;
+    border: 1px solid #ec9b24;
     border-top: none;
 }
-#main-menu .depth1 .depth2 li a:hover{
+#main-menu .depth2 li a:hover{
     background: #ec9b24;
     color: whitesmoke;
     font-weight: bold;
