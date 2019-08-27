@@ -13,9 +13,11 @@
     <script src="js/sticky.js"></script>
     <!-- fontawesome 추가 -->
     <script src="https://kit.fontawesome.com/30ee9118ac.js"></script>
-    <!-- BX Slider -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- fancybox -->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 </head>
 <body>
     <header id="container">
@@ -52,38 +54,19 @@
         </div>
     </header>
     <!-- main-menu -->
-    <nav id="main-menu">
+        <nav id="quick-menu">
             <ul class="depth1">
                 <li>
-                    <a href="index.html">HOME</a>
+                    <a href="#container"><img src="images/quick-home.png" alt="home"></a>
                 </li>
                 <li>
-                    <a href="#">PHOTOSHOP</a>
-                    <ul class="depth2">
-                        <li><a href="#">(쥬씨 마니아)메인 타이틀</a></li>
-                        <li><a href="#">책 커버 만들기</a></li>
-                        <li><a href="#">국민은행 배너1,2</a></li>
-                        <li><a href="#">피자헛 배너1,2</a></li>
-                        <li><a href="#">봄 맞이 이벤트 배너1,2</a></li>
-                    </ul>
+                    <a href="#content1"><img src="images/quick-ps.png" alt="photoshop"></a>
                 </li>
                 <li>
-                    <a href="#">ILLUSTRATOR</a>
-                    <ul class="depth2">
-                        <li><a href="#">타이포그래피(동물)</a></li>
-                        <li><a href="#">아이콘 세트 제작(선,면)</a></li>
-                        <li><a href="#">홈페이지 타이틀</a></li>
-                        <li><a href="#">모바일 청첩장(1,2)</a></li>
-                        <li><a href="#">이벤트 페이지(도넛)</a></li>
-                    </ul>
+                    <a href="#content2"><img src="images/quick-ai.png" alt="illustrator"></a>
                 </li>
                 <li>
-                    <a href="#">CODING</a>
-                    <ul class="depth2">
-                        <li><a href="#">SUMMER 홈페이지</a></li>
-                        <li><a href="#">오산 컨벤션 웨딩홀</a></li>
-                        <li><a href="#">삼진제약</a></li>
-                    </ul>
+                    <a href="#content3"><img src="images/quick-code.png" alt="code"></a>
                 </li>
             </ul>
         </nav>
@@ -91,27 +74,24 @@
             <div class="content1-main-txt">
             <h1>PhotoShop</h1>
             </div>
-            <div class="content1-items">
-            <div class="content1-item1">
-                <a href="#"><img src="images/content1-book1.jpg" alt="book1"></a>
-                <a href="#"><img src="images/content1-book2.jpg" alt="book2"></a>
-            </div>
-            <div class="content1-item2">
-                <a href="#"><img src="images/content1-juice.jpg" alt="juice" style="border: 1px solid #ccc;"></a>
-            </div>
-            <div class="content1-item3">
-                <a href="#"><img src="images/content1-event1.jpg" alt="event1"></a>
-                <a href="#"><img src="images/content1-event2.jpg" alt="event2"></a>
-            </div>
-            <div class="content1-item4">
-                <a href="#"><img src="images/content1-bank1.jpg" alt="bank1"></a>
-                <a href="#"><img src="images/content1-bank2.jpg" alt="bank2"></a>
-            </div>
-            <div class="content1-item5">
-                <a href="#"><img src="images/content1-pizza1.jpg" alt="pizza1"></a>
-                <a href="#"><img src="images/content1-pizza2.jpg" alt="pizza2"></a>
-            </div>
-            </div>
+            <ul class="content1-img">
+                    <li>
+                        <a data-fancybox="gallery" href="images/content1-big-img/content1-juice.jpg">
+                        <img src="images/content1.png">
+                        </a>
+                        <a data-fancybox="gallery" href="images/content1-big-img/book1.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content1-big-img/book2.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content1-big-img/gmarket-main1.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content1-big-img/gmarket-main2.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content1-big-img/gmarket.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content1-big-img/event1.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content1-big-img/event2.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content1-big-img/bank1.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content1-big-img/bank2.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content1-big-img/pizza1.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content1-big-img/pizza2.jpg"></a>
+                    </li>
+                </ul>
         </section>
         <section id="content2">
             <div class="content2-main-txt">
@@ -121,18 +101,25 @@
                 <div class="content2-left-txt">
                     <p>배너 및 디자인</p>
                 </div>
-                <div class="content2-left-img1">
-                    <a href="#"><img src="images/content2-cat.jpg" alt="cat"></a>
-                </div>
-                <div class="content2-left-img2">
-                    <a href="#"><img src="images/content2-donut.jpg" alt="donut"></a>
-                </div>
-                <div class="content2-left-img3">
-                    <a href="#"><img src="images/content2-icon.jpg" alt="icon"></a>
-                </div>
-                <div class="content2-left-img4">
-                    <a href="#"><img src="images/content2-travel.jpg" alt="travel"></a>
-                </div>
+                <ul class="content2-left-img">
+                    <li>
+                        <a data-fancybox="gallery" href="images/content2-big-img/cat.jpg">
+                        <img src="images/cat.png">
+                        </a>
+                        <a data-fancybox="gallery" href="images/content2-big-img/donut.jpg">
+                        <img src="images/donut.png">
+                        </a>
+                        <a data-fancybox="gallery" href="images/content2-big-img/title-travel.jpg">
+                            <img src="images/weather-travel.png">
+                        </a>
+                        <a data-fancybox="gallery" href="images/content2-big-img/title-mustact.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content2-big-img/icon-face.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content2-big-img/icon-line.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content2-big-img/hankang.png"></a>
+                        <a data-fancybox="gallery" href="images/content2-big-img/mobile1.jpg"></a>
+                        <a data-fancybox="gallery" href="images/content2-big-img/mobile2.jpg"></a>
+                    </li>
+                </ul>
             </div>
             <div class="content2-right">
                 <div class="content2-right-txt">
@@ -141,21 +128,11 @@
                 <div class="content2-right-case">
                     <img src="images/phone-case.png" alt="case">
                 </div>
-                <div class="content2-right-bxslider">
                 <div class="content2-right-slider">
-                    <div class="content2-right-img1">
-                        <a href="#"><img src="images/content2-mobile1-1.png" alt="mobile1-1"></a>
-                    </div>
-                    <div class="content2-right-img2">
-                        <a href="#"><img src="images/content2-mobile1-2.png" alt="mobile1-2"></a>
-                    </div>
-                    <div class="content2-right-img3">
-                        <a href="#"><img src="images/content2-mobile2-1.png" alt="mobile2-1"></a>
-                    </div>
-                    <div class="content2-right-img4">
-                        <a href="#"><img src="images/content2-mobile2-2.png" alt="mobile2-2"></a>
-                    </div>
-                </div>
+                    <img src="images/content2-mobile1-1.png" alt="1">
+                    <img src="images/content2-mobile1-2.png" alt="2">
+                    <img src="images/content2-mobile2-1.png" alt="3">
+                    <img src="images/content2-mobile2-2.png" alt="4">
                 </div>
             </div>
         </section>
@@ -163,7 +140,7 @@
             <div class="content3-main-txt">
                 <h1>Coding</h1>
             </div>
-            <div class="content3-osan-container">
+            <div class="content3-container">
                 <div class="content3-osan-img-txt">
                     <h2>오산컨벤션웨딩홀 리뉴얼</h2>
                     <p>트렌디하지 못한 기존 사이트를 리뉴얼 하였습니다.
@@ -171,64 +148,62 @@
                     사이트에 꽉 차는 VISUAL 영역과 CONTENTS들의 중간 배치를
                     사용하여 답답함을 없애고 균형감을 만들었습니다.</p>
                 </div>
-                <div class="content3-osan-img-link">
-                    <a href="http://osanwedding.co.kr/" class="content3-img-beforelink">기존 사이트</a>
-                    <a href="https://codeadrew.github.io/team-project1/">리뉴얼 사이트</a>
-                </div>
-                <div class="content3-osan-imgs">
-                    <div class="content3-osan-img1">
-                        <a href="#"><img src="images/content3-osan-main.png" alt="main"></a>
-                    </div>
-                    <div class="content3-osan-img2">
-                        <a href="#"><img src="images/content3-osan-introduction.png" alt="introduction"></a>
-                    </div>
-                    <div class="content3-osan-img3">
-                        <a href="#"><img src="images/content3-osan-reservation.png" alt="reservation"></a>
-                    </div>
-                    <div class="content3-osan-img4">
-                        <a href="#"><img src="images/content3-osan-wedding.png" alt="wedding"></a>
-                    </div>
-                    <div class="content3-osan-img5">
-                        <a href="#"><img src="images/content3-osan-location.png" alt="location"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="content3-samjin-container">
                 <div class="content3-samjin-img-txt">
                     <h2>삼진제약 리뉴얼</h2>
                     <p>오래된 제약회사 홈페이지 특유의 딱딱함과 꾸밈없는 밋밋함을
                         최근의 트렌드를 반영하여 메인,서브컬러를 강조하여 밋밋함을 없애고
                         각각의 매체를 큰 화면과 중앙정렬 방식으로 답답함을 최소화하고 
-                        균형감을 잡았습니다. MAIN영역에 애니메이션 효과를 사용하여
-                        심심하지 않게 제작하였고 빠른 피드백과 접근성을 위해 비슷한 주제의
-                        메뉴를 합치고 퀵메뉴를 제작하였습니다.
+                        균형감을 잡았습니다. 빠른 피드백과 접근성을 위해 퀵메뉴를 제작하였습니다.
                     </p>
+                </div>
+                <div class="content3-osan-img-link">
+                    <a href="http://osanwedding.co.kr/" class="content3-img-beforelink">기존 사이트</a>
+                    <a href="https://codeadrew.github.io/team-project1/">리뉴얼 사이트</a>
                 </div>
                 <div class="content3-samjin-img-link">
                     <a href="https://www.samjinpharm.co.kr/">기존 사이트</a>
                     <a href="https://codeadrew.github.io/team-project2/">리뉴얼 사이트</a>
                 </div>
-                <div class="content3-samjin-imgs">
-                    <div class="content3-samjin-img1">
-                        <a href="#"><img src="images/content3-samjin-main.png" alt="main"></a>
-                    </div>
-                    <div class="content3-samjin-img2">
-                        <a href="#"><img src="images/content3-samjin-product.png" alt="product"></a>
-                    </div>
-                    <div class="content3-samjin-img3">
-                        <a href="#"><img src="images/content3-samjin-about.png" alt="about"></a>
-                    </div>
-                    <div class="content3-samjin-img4">
-                        <a href="#"><img src="images/content3-samjin-location.png" alt="location"></a>
-                    </div>
-                    <div class="content3-samjin-img5">
-                        <a href="#"><img src="images/content3-samjin-servation.png" alt="servation"></a>
-                    </div>
-                </div>
+                <ul class="list-osan">
+                    <li>
+                      <a data-fancybox="gallery" href="images/content3/content3-osan-main.png">
+                        <img src="images/content3-osan-main.png">
+                        <div class="caption">
+                          <img src="images/plus.png" alt="plus">
+                        </div>
+                      </a>
+                      <a data-fancybox="gallery" href="images/content3/content3-osan-introduction.png"></a>
+                      <a data-fancybox="gallery" href="images/content3/content3-osan-location.png"></a>
+                      <a data-fancybox="gallery" href="images/content3/content3-osan-reservation.png"></a>
+                      <a data-fancybox="gallery" href="images/content3/content3-osan-wedding.png"></a>
+                    </li>
+                </ul>
+                <ul class="list-samjin">
+                    <li>
+                      <a data-fancybox="gallery" href="images/content3-big-img/samjin-main.png">
+                        <img src="images/content3-samjin-main.png">
+                        <div class="caption">
+                            <img src="images/plus.png" alt="plus">
+                        </div>
+                      </a>
+                      <a data-fancybox="gallery" href="images/content3-big-img/samjin-about.png"></a>
+                      <a data-fancybox="gallery" href="images/content3-big-img/samjin-product.png"></a>
+                      <a data-fancybox="gallery" href="images/content3-big-img/samjin-location.png"></a>
+                      <a data-fancybox="gallery" href="images/content3-big-img/samjin-customer.png"></a>
+                    </li>
+                </ul>
             </div>
         </section>
         <footer id="footer">
-
+            <div class="contact">
+                <h1>Contact Me</h1>
+                <p class="contact-line"></p>
+                <h3>codeadrew@gamil.com</h3>
+                <h3>010-9809-1855</h3>
+            </div>
+            <div class="copyright">
+                <p>Copyright ⓒ 2018 Hyeonah Park All right reserved.</p>
+            </div>
         </footer>
 </body>
 </html>
