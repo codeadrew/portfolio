@@ -116,6 +116,11 @@ header{
     animation-duration: 2s;
     animation-name: visual-boximg;
     animation-direction: alternate;
+    transition: all .1s linear;
+}
+.visual-box:hover img{
+    margin-top: 600px;
+    transition: all .1s linear;
 }
 @keyframes visual-boximg {
     from {
