@@ -11,14 +11,17 @@ html,body{
 /* header */
 
 header{
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 930px;
     /* border: 1px solid red; */
     background: #333;
 }
 .main-title{
-    width: 100%;
-    height: 180px;
+    position: absolute;
+    left: 5%; top: 5%;
+    width: 25%;
+    height: 160px;
     color: white;
     animation-duration: 4s;
     animation-name: main-title;
@@ -31,7 +34,6 @@ header{
     }
   
     to {
-        top: 0;
       opacity: 1;
     }
 }
@@ -54,9 +56,7 @@ header{
     color: white;
 }
 .main-title h1{
-    position: absolute;
-    left: 5%; top: 5%;
-    width: 450px;
+    width: 100%;
     padding-bottom: 5px;
     font-size: 3.4em;
     font-weight: bold;
@@ -64,9 +64,7 @@ header{
     text-shadow: 1px 1px 4px black;
 }
 .main-title p{
-    position: absolute;
-    left: 5%; top: 13%;
-    width: 300px;
+    width: 100%;
     margin-top: 15px;
     font-size: 2.2em;
     font-weight: bold;
@@ -87,11 +85,12 @@ header{
     /* background: #333; */
 }
 .visual-box{
+    position: absolute;
     overflow: hidden;
     width: 600px;
     height: 600px;
-    margin: 0 auto;
-    margin-top: 50px;
+    left: 35%;
+    top: 20%;
     border: 15px solid #ec9b24;
     border-radius: 50%;
     box-shadow: 8px 8px 6px black inset;
@@ -116,15 +115,9 @@ header{
     animation-duration: 2s;
     animation-name: visual-boximg;
     animation-direction: alternate;
-    transition: all .1s linear;
-}
-.visual-box:hover img{
-    margin-top: 600px;
-    transition: all .1s linear;
 }
 @keyframes visual-boximg {
     from {
-        margin-top: 300px;
       opacity: 0; 
     }
   
@@ -236,6 +229,7 @@ header{
     width: 100%;
     height: 900px;
     text-align: center;
+    background: #636363;
 }
 #content2 h1{
     font-size: 3em;
@@ -262,6 +256,7 @@ header{
     left: 50%; transform: translateX(-50%);
     top: 5%;
     font-size: 2em;
+    color: whitesmoke;
 }
 .content2-left-img{
     position: absolute;
@@ -285,6 +280,7 @@ header{
     left: 50%; transform: translateX(-50%);
     top: 5%;
     font-size: 2em;
+    color: whitesmoke;
 }
 .content2-right-case{
     position: absolute;
@@ -319,8 +315,9 @@ header{
 #content3{
     position: relative;
     width: 100%;
-    height: 1000px;
+    height: 980px;
     text-align: center;
+    background: #636363;
 }
 #content3 h1{
     font-size: 3em;
@@ -337,6 +334,7 @@ header{
 
 .content3-container{
     position: relative;
+    background: #636363;
     opacity: 0;
     width: 100%;
     height: 900px;
@@ -350,12 +348,16 @@ header{
     text-align: left;
     padding: 0;
     margin-bottom: 15px;
+    text-shadow: 3px 3px 3px #333;
+    color: whitesmoke;
 }
 .content3-osan-img-txt p{
     width: 250px;
     font-size: 14px;
+    font-weight: middle;
     line-height: 1.5;
     text-align: left;
+    color: whitesmoke;
 }
 .content3-osan-img-link{
     position: absolute;
@@ -416,12 +418,16 @@ header{
     text-align: left;
     padding: 0;
     margin-bottom: 15px;
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px #333;
 }
 .content3-samjin-img-txt p{
     width: 250px;
     font-size: 14px;
+    font-weight: middle;
     line-height: 1.5;
     text-align: left;
+    color: whitesmoke;
 }
 .content3-samjin-img-link{
     position: absolute;
@@ -479,7 +485,7 @@ header{
     width: 100%;
     height: 250px;
     background: #fff;
-    border-top: 3px dashed #333;
+    border-top: 5px solid #333;
 }
 .contact{
     position: absolute;
